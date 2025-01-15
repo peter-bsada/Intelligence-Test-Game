@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style/style.css" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/fizzBuzz.js"></script>
+  <script defer src="js/minne.js"></script>
+  <title>Intelligenstest</title>
+</head>
+<body id="body">
+    <div class=" quiz-container" id="quiz">
+        <!-- intro sidan -->
+        <p id="introText"></p>
+        <button id="start">Start</button>
+        <!-- för första spelet -->
+        <p class="hide" id="scoreQuiz"></p>
+        <div class="quiz-header hide" id="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_svar">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_svar">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_svar">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_svar">Answer</label>
+                </li>
+            </ul>
+        </div>
+        <button class="hide" id="submit">Submit</button>
+        <button class="hide" id="next">next</button>
+        <!-- för andra spelet -->
+        <p class="hide" id="textFizz"></p>
+        <p class="hide" id="scoreFizz"></p>
+        <div class="fizz-header hide" id="fizz-header">
+            <h2 id="questions">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="aFizz" class="answer">
+                    <label for="aFizz" id="a_fizz">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="bFizz" class="answer">
+                    <label for="bFizz" id="b_fizz">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="cFizz" class="answer">
+                    <label for="cFizz" id="c_fizz">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="dFizz" class="answer">
+                    <label for="dFizz" id="d_fizz">Answer</label>
+                </li>
+            </ul>
+        </div>
+        <button class="hide" id="nextGame">Next Game</button>
+        <!-- för tredje spelet -->
+        <p class="hide" id="textMinne"></p>
+        <p class="hide" id="scoreMinne"></p>
+        <div class="minne-header hide" id="minneHeader">
+            <div class="game">
+                <div class="card" id="1" onclick="checkButton(this)">
+                    <div class="back"><img src="img/sverige.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+                <div class="card" id="2" onclick="checkButton(this)">
+                    <div class="back"><img src="img/kina.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+                <div class="card" id="3" onclick="checkButton(this)">
+                    <div class="back"><img src="img/spain.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+
+                <div class="card" id="4" onclick="checkButton(this)">
+                    <div class="back"><img src="img/syrien.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+                <div class="card" id="5" onclick="checkButton(this)">
+                    <div class="back"><img src="img/italien.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+                <div class="card" id="6" onclick="checkButton(this)">
+                    <div class="back"><img src="img/brazil.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+
+                <div class="card" id="7" onclick="checkButton(this)">
+                    <div class="back"><img src="img/tyskland.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+                <div class="card" id="8" onclick="checkButton(this)">
+                    <div class="back"><img src="img/finland.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+                <div class="card" id="9" onclick="checkButton(this)">
+                    <div class="back"><img src="img/egypten.jpg"></div>
+                    <div class="front"><img src="img/grey.jpg"></div>
+                </div>
+            </div>
+            <div class="text hide">
+                <p>1. Sverige</p>
+                <p>2. Kina</p>
+                <p>3. Spanien</p>
+                <p>4. Syrien</p>
+                <p>5. Italien</p>
+                <p>6. Brasilien</p>
+                <p>7. Tyskland</p>
+                <p>8. Finland</p>
+                <p>9. Egypten</p>
+            </div>
+        </div>
+        <!-- Knapparna för sista spelet -->
+        <button class="hide" id="endGameButton">Go to scoreboard</button>
+        <!-- Knapparna för andra spelet -->
+        <button class="hide" id="fizzSubmit">Submit</button>
+        <button class="hide" id="fizzNext">next</button>
+        <button class="hide" id="nextGameThree">Next Game</button>
+
+
+    </div>
+</body>
+</html>
